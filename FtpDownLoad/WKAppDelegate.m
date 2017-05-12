@@ -6,17 +6,26 @@
 //  Copyright © 2017年 Jeaner. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "WKAppDelegate.h"
+#import "WKViewController.h"
 
-@interface AppDelegate ()
+@interface WKAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation WKAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.viewController = [[WKViewController alloc] initWithNibName:@"WKViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+    return YES;
+    
     return YES;
 }
 

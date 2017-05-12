@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+@class WKViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface WKAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
+
+@property (strong, nonatomic) WKViewController *viewController;
 
 - (void)saveContext;
 

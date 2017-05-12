@@ -6,8 +6,8 @@
 //  Copyright (c) 2017年 atany. All rights reserved.
 //
 
-#define Your_FTP_Account @"imftp"
-#define Your_FTP_Password @"im.ftp.2014"
+#define Your_FTP_Account @"test"
+#define Your_FTP_Password @"test"
 
 #import "WKViewController.h"
 
